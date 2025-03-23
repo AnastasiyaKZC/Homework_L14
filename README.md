@@ -7,10 +7,10 @@
 - [Ссылка на дженкинс урока](https://jenkins.autotests.cloud/login?from=%2Fjob%2Fteacher-iTerkin-qa_guru_python_8_full_project%2F0)
 
 
-Доделать. - ссылка на дженкинс, аллюр-отчет, телеграмм бот
+# Доделать! - ссылка на дженкинс, аллюр-отчет, телеграмм бот
 
 
-## Проект по тестированию проекта "it.arda.digital"
+## Проект UI автотестов "it.arda.digital"
 > <a target="_blank" href="https://it.arda.digital/">Ссылка на страницу ИТ-кластера</a>
 > 
 > ![This is an image](https://it.arda.digital/img/intro_small.b3aa65da.png)
@@ -41,6 +41,27 @@
   <code><img width="5%" title="Allure Report" src="logo/allure_report.png"></code>
   <code><img width="5%" title="Telegram" src="logo/tg.png"></code>
 </p>
+
+## Установка
+Инструкции по установке зависимостей.
+
+```sh
+pip install -r requirements.txt  # Установка зависимостей
+```
+
+## Запуск тестов
+Для запуска тестов используйте следующую команду:
+
+```sh
+pytest  # Запуск всех тестов в проекте
+```
+
+### Основные ключи `pytest`:
+- `-v` (verbose) — подробный вывод результатов тестирования.
+- `-s` (show output) — показывает `print` внутри тестов.
+- `--maxfail=N` — завершает тестирование после `N` неудачных тестов.
+- `-k 'substring'` — запускает только тесты, содержащие `substring` в названии.
+- `--tb=short` — сокращенный вывод трейсбека ошибок.
 
 <!-- Jenkins -->
 
