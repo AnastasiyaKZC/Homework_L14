@@ -16,7 +16,7 @@
 > ![This is an image](https://it.arda.digital/img/intro_small.b3aa65da.png)
 
 #### Список проверок, реализованных в автотестах
-- [x] Наличие требуемых заголовков в верхнем меню страницы
+- [x] Наличие логотипа в хэдере страницы
 - [x] Наличие заданных пунктов подменю для меню "Молодым специалистам"
 - [x] Наличие блока подписки на социальные сети в подвале сайта
 - [x] Наличие имиджевого текста на первой странице
@@ -29,9 +29,19 @@
 
 
 ## Проект реализован с использованием
-PyCharm Selene Jenkins Allure Report Telegram 
 
-![This is an image]()![This is an image]()![This is an image]()![This is an image]()![This is an image]()
+<p  align="center">
+  <code><img width="5%" title="Pycharm" src="logo/pycharm.png"></code>
+  <code><img width="5%" title="Python" src="logo/python.png"></code>
+  <code><img width="5%" title="Pytest" src="logo/pytest.png"></code>
+  <code><img width="5%" title="Selene" src="logo/selene.png"></code>
+  <code><img width="5%" title="GitHub" src="logo/github.png"></code>
+  <code><img width="5%" title="Jenkins" src="logo/jenkins.png"></code>
+  <code><img width="5%" title="Selenoid" src="logo/selenoid.png"></code>
+  <code><img width="5%" title="Allure Report" src="logo/allure_report.png"></code>
+  <code><img width="5%" title="Telegram" src="logo/tg.png"></code>
+</p>
+
 # Запуск автотестов выполняется на сервере Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/09-ElenaSeversk-unit13/">Ссылка на проект в Jenkins</a>
 
