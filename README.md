@@ -10,8 +10,8 @@
 
 ## Проект UI автотестов "it.arda.digital"
 > <a target="_blank" href="https://it.arda.digital/">Ссылка на страницу ИТ-кластера</a>
-<p  align="center">
-  <code><img width="40%" title="Pycharm" src="https://it.arda.digital/img/intro_small.b3aa65da.png"></code>
+<p align="center">
+  <img width="40%" title="Pycharm" src="https://it.arda.digital/img/intro_small.b3aa65da.png">
 </p>
 
 ### Список проверок, реализованных в автотестах
@@ -27,16 +27,17 @@
 - [x] Соответствие вёрстки сайта общепринятым стандартам
 
 ## Проект реализован с использованием
-<p  align="center">
-  <code><img width="5%" title="Pycharm" src="logo/pycharm.png"></code>
-  <code><img width="5%" title="Python" src="logo/python.png"></code>
-  <code><img width="5%" title="Pytest" src="logo/pytest.png"></code>
-  <code><img width="5%" title="Selene" src="logo/selene.png"></code>
-  <code><img width="5%" title="GitHub" src="logo/github.png"></code>
-  <code><img width="5%" title="Jenkins" src="logo/jenkins.png"></code>
-  <code><img width="5%" title="Selenoid" src="logo/selenoid.png"></code>
-  <code><img width="5%" title="Allure Report" src="logo/allure_report.png"></code>
-  <code><img width="5%" title="Telegram" src="logo/tg.png"></code>
+<p align="center">
+  <img width="5%" title="Pycharm" src="logo/pycharm.png">
+  <img width="5%" title="Python" src="logo/python.png">
+  <img width="5%" title="Pytest" src="logo/pytest.png">
+  <img width="5%" title="Selene" src="logo/selene.png">
+  <img width="5%" title="GitHub" src="logo/github.png">
+  <img width="5%" title="Jenkins" src="logo/jenkins.png">
+  <img width="5%" title="Selenoid" src="logo/selenoid.png">
+  <img width="5%" title="Allure Report" src="logo/allure_report.png">
+  <img width="5%" title="Allure Report" src="logo/allure_testops.png">
+  <img width="5%" title="Telegram" src="logo/tg.png">
 </p>
 
 ## Установка
@@ -74,6 +75,20 @@ pytest  # Запуск всех тестов в проекте
 
 Видео прохождения теста:
 ![Test Video](images/screenshots/tests_ui.gif)
+
+## <img width="3%" title="Allure TestOps" src="logo/allure_testops.png"> Интеграция с Allure TestOps
+[Dashboard](https://allure.autotests.cloud/project/1720/dashboards)
+
+Так же вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики.
+![Allure TestOps Dashboard](images/screenshots/allure_testops_dashboard.png)
+
+Во вкладке со сьютами, мы можем:
+- Управлять всеми тест-кейсами или с каждым отдельно
+- Перезапускать каждый тест отдельно от всех тестов
+- Настроить интеграцию с Jira
+- Добавлять ручные тесты и т.д.
+
+![Allure TestOps Suites](images/screenshots/allure_testops_suites.png)
 
 ## <img width="3%" title="Telegram" src="logo/tg.png"> Интеграция с Telegram
 После прохождения тестов, в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
