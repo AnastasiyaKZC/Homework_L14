@@ -6,30 +6,27 @@
 - [Ссылка на лекцию](https://github.com/qa-guru/knowledge-base/wiki#python)
 - [Ссылка на дженкинс урока](https://jenkins.autotests.cloud/login?from=%2Fjob%2Fteacher-iTerkin-qa_guru_python_8_full_project%2F0)
 
-
 # Доделать! - ссылка на дженкинс, аллюр-отчет, телеграмм бот
-
 
 ## Проект UI автотестов "it.arda.digital"
 > <a target="_blank" href="https://it.arda.digital/">Ссылка на страницу ИТ-кластера</a>
-> 
-> ![This is an image](https://it.arda.digital/img/intro_small.b3aa65da.png)
+<p  align="center">
+  <code><img width="40%" title="Pycharm" src="https://it.arda.digital/img/intro_small.b3aa65da.png"></code>
+</p>
 
-#### Список проверок, реализованных в автотестах
+### Список проверок, реализованных в автотестах
 - [x] Наличие логотипа в хэдере страницы
 - [x] Наличие заданных пунктов подменю для меню "Молодым специалистам"
 - [x] Наличие блока подписки на социальные сети в подвале сайта
 - [x] Наличие имиджевого текста на первой странице
 - [x] Выполнение поиска заданной вакансии. Проверка, что открылась соответствующая страница и содержимое строки поиска соответствует заданному
-#### Список проверок ручного тестирования
+
+### Список проверок ручного тестирования
 - [x] Визуальная характеристика главной страницы сайта, соответствие единому корпоративному стилю
 - [x] Адаптивность вёрстки
 - [x] Соответствие вёрстки сайта общепринятым стандартам
 
-
-
-### Проект реализован с использованием
-
+## Проект реализован с использованием
 <p  align="center">
   <code><img width="5%" title="Pycharm" src="logo/pycharm.png"></code>
   <code><img width="5%" title="Python" src="logo/python.png"></code>
@@ -43,15 +40,11 @@
 </p>
 
 ## Установка
-Инструкции по установке зависимостей.
-
 ```sh
 pip install -r requirements.txt  # Установка зависимостей
 ```
 
 ## Запуск тестов
-Для запуска тестов используйте следующую команду:
-
 ```sh
 pytest  # Запуск всех тестов в проекте
 ```
@@ -63,38 +56,25 @@ pytest  # Запуск всех тестов в проекте
 - `-k 'substring'` — запускает только тесты, содержащие `substring` в названии.
 - `--tb=short` — сокращенный вывод трейсбека ошибок.
 
-<!-- Jenkins -->
+## <img width="3%" title="Jenkins" src="logo/jenkins.png"> Запуск проекта в Jenkins
+[Job](https://jenkins.autotests.cloud/job/UI_demoqa_qa_guru_python_2/)
 
-### <img width="3%" title="Jenkins" src="logo/jenkins.png"> Запуск проекта в Jenkins
+При нажатии на "Собрать сейчас" начнется сборка тестов и их прохождение через виртуальную машину в Selenide.
+![Jenkins Screenshot](images/screenshots/jenkins.png)
 
-### [Job](https://jenkins.autotests.cloud/job/UI_demoqa_qa_guru_python_2/)
+## <img width="3%" title="Allure Report" src="logo/allure_report.png"> Allure report
+После прохождения тестов, результаты можно посмотреть в Allure отчете, где также содержится ссылка на Jenkins.
+![Allure Dashboard](images/screenshots/allure_dashboard.png)
 
-##### При нажатии на "Собрать сейчас" начнется сборка тестов и их прохождение, через виртуальную машину в Selenide.
-![This is an image](images/screenshots/jenkins.png)
+Во вкладке Graphs можно посмотреть графики о прохождении тестов, по их приоритезации, по времени прохождения и др.
+![Allure Graphs](images/screenshots/allure_graphs.png)
 
+Во вкладке Suites находятся собранные тест-кейсы, у которых описаны шаги и приложены логи, скриншот и видео о прохождении теста.
+![Allure Suites](images/screenshots/allure_suites.png)
 
-<!-- Allure report -->
+Видео прохождения теста:
+![Test Video](images/screenshots/tests_ui.gif)
 
-### <img width="3%" title="Allure Report" src="logo/allure_report.png"> Allure report
-
-##### После прохождения тестов, результаты можно посмотреть в Allure отчете, где так же содержится ссылка на Jenkins
-![This is an image](images/screenshots/allure_dashboard.png)
-
-##### Во вкладке Graphs можно посмотреть графики о прохождении тестов, по их приоритезации, по времени прохождения и др.
-![This is an image](images/screenshots/allure_graphs.png)
-
-##### Во вкладке Suites находятся собранные тест кейсы, у которых описаны шаги и приложены логи, скриншот и видео о прохождении теста
-![This is an image](images/screenshots/allure_suites.png)
-
-##### Видео прохождение теста
-![This is an image](images/screenshots/tests_ui.gif)
-
-
-<!-- Telegram -->
-
-### <img width="3%" title="Telegram" src="logo/tg.png"> Интеграция с Telegram
-##### После прохождения тестов, в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
-
-![This is an image](images/screenshots/tg_bot.png)
-
-
+## <img width="3%" title="Telegram" src="logo/tg.png"> Интеграция с Telegram
+После прохождения тестов, в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
+![Telegram Bot](images/screenshots/tg_bot.png)
