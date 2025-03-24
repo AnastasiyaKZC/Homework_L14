@@ -56,23 +56,23 @@ pytest  # Запуск всех тестов в проекте
 - `allure serve tests/allure-results` — запускает локальный сервер с отчетом Allure.
 
 ## <img width="3%" title="Jenkins" src="logo/jenkins.png"> Запуск проекта в Jenkins
-[Job](https://jenkins.autotests.cloud/job/UI_demoqa_qa_guru_python_2/)
+[Job](https://jenkins.autotests.cloud/job/AnastasiyaKZC_Homework_L14/)
 
-При нажатии на "Собрать сейчас" начнется сборка тестов и их прохождение через виртуальную машину в Selenide.
-![Jenkins Screenshot](images/screenshots/jenkins.png)
+При нажатии на "Build with Parameters", а затем "Build" начнется сборка тестов и их прохождение через виртуальную машину в Selenide.
+![Jenkins Screenshot](logo/jenkins_screen.png)
 
 ## <img width="3%" title="Allure Report" src="logo/allure_report.png"> Allure report
 После прохождения тестов, результаты можно посмотреть в Allure отчете, где также содержится ссылка на Jenkins.
-![Allure Dashboard](images/screenshots/allure_dashboard.png)
+![Allure Dashboard](logo/allure_report.png)
 
-Во вкладке Graphs можно посмотреть графики о прохождении тестов, по их приоритезации, по времени прохождения и др.
-![Allure Graphs](images/screenshots/allure_graphs.png)
+Во вкладке Graphs можно посмотреть графики о прохождении тестов, по их приоритизации, по времени прохождения и др.
+![Allure Graphs](logo/graphs.png)
 
 Во вкладке Suites находятся собранные тест-кейсы, у которых описаны шаги и приложены логи, скриншот и видео о прохождении теста.
-![Allure Suites](images/screenshots/allure_suites.png)
+![Allure Suites](logo/suites.png)
 
 Видео прохождения теста:
-![Test Video](images/screenshots/tests_ui.gif)
+![Test Video](logo/test.gif)
 
 ## <img width="3%" title="Allure TestOps" src="logo/allure_testops.png"> Интеграция с Allure TestOps
 [Dashboard](https://allure.autotests.cloud/project/1720/dashboards)
