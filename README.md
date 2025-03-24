@@ -52,6 +52,7 @@ pytest  # Запуск всех тестов в проекте
 - `--maxfail=N` — завершает тестирование после `N` неудачных тестов.
 - `-k 'substring'` — запускает только тесты, содержащие `substring` в названии.
 - `--tb=short` — сокращенный вывод трейсбека ошибок.
+- `allure serve tests/allure-results` — запускает локальный сервер с отчетом Allure.
 
 ## <img width="3%" title="Jenkins" src="logo/jenkins.png"> Запуск проекта в Jenkins
 [Job](https://jenkins.autotests.cloud/job/UI_demoqa_qa_guru_python_2/)
