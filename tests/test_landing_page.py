@@ -25,15 +25,17 @@ def test_registration_form_opens(setup_browser):
         setup_browser.element("form").should(be.visible)
 
 
-# @allure.epic("Landing Page Tests")
-# @allure.feature("Navigation")
-# @allure.story("Переход по ссылке arda.digital")
-# @allure.title("Проверка корректности перехода по ссылке arda.digital")
-# def test_learn_more_link(setup_browser):
-#     with allure.step("Открываем страницу https://it.arda.digital"):
-#         setup_browser.open("https://it.arda.digital")
-#     with allure.step("Кликаем на кнопку 'Подробнее'"):
-#         setup_browser.element("a[href='/learn-more']").click()
-#     with allure.step("Проверяем, что произошел переход на страницу 'Подробнее'"):
-#         setup_browser.should(have.url_containing("/learn-more"))
-#
+@allure.epic("Landing Page Tests")
+@allure.feature("Navigation")
+@allure.story("Переход по ссылке arda.digital")
+@allure.title("Проверка корректности перехода по ссылке arda.digital")
+def test_learn_more_link(setup_browser):
+    with allure.step("Открываем страницу https://it.arda.digital"):
+        setup_browser.open("https://it.arda.digital")
+    with allure.step("Скроллим в конец страницы"):
+        setup_browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    with allure.step("Кликаем на кнопку 'Подробнее'"):
+        setup_browser.element("#app > div > div > div > div:nth-child(10) > div.text-center > a").should(be.visible).click()
+    with allure.step("Открыта страница arda.digital в новой вкладке"):
+        setup_browser.switch_to_next_tab()
+        setup_browser.should(have.url("https://arda.digital/"))

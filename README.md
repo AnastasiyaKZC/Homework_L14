@@ -6,17 +6,18 @@
 - [Ссылка на дженкинс лекции](https://jenkins.autotests.cloud/login?from=%2Fjob%2Fteacher-iTerkin-qa_guru_python_8_full_project%2F0) 
 
 
-# Доделать! - ссылка на дженкинс, аллюр-отчет, телеграмм бот
+# Доделать! - ссылка на аллюр-отчет, телеграмм бот
 
 ## Проект UI автотестов "it.arda.digital"
 > <a target="_blank" href="https://it.arda.digital/">Ссылка на страницу ИТ-кластера</a>
 <p align="center">
-  <img width="40%" title="Pycharm" src="https://it.arda.digital/img/intro_small.b3aa65da.png">
+  <img width="40%" title="it.arda" src="https://it.arda.digital/img/intro_small.b3aa65da.png">
 </p>
 
 ### Список проверок, реализованных в автотестах
 - [x] Лендинг. Открытие страницы - наличие логотипа
 - [x] Лендинг. Открытие страницы - открытие формы регистрации
+
 - [x] Лендинг. Переход на https://arda.digital/
 - [x] Авторизация. Успешная авторизация (разлогиниться в после прохождения теста)
 - [x] Авторизация. Неверный логин
