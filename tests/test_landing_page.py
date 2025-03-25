@@ -1,5 +1,5 @@
 import allure
-from selene import have, be, browser
+from selene import have, be
 
 
 @allure.epic("Landing Page Tests")
