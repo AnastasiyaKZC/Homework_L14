@@ -48,11 +48,12 @@ def setup_browser(request):
 #
 #     yield browser  # Возвращаем browser в тест
 #
-#     # Закрываем браузер после выполнения теста, но сначала делаем аттачи
-#     attach.add_screenshot(browser)  # Аттач скриншота
+#     # Делаем аттачи
+#     attach.add_screenshot(browser)   # Аттач скриншота
 #     attach.add_html(browser)         # Аттач HTML-кода страницы
 #     attach.add_logs(browser)         # Аттач логов браузера
 #     attach.add_video(browser)        # Аттач видео (если поддерживается)
 #
 #         # Закрываем браузер после выполнения теста
 #     browser.quit()
+#

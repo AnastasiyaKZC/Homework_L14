@@ -92,4 +92,4 @@ pytest  # Запуск всех тестов в проекте
 
 ## <img width="3%" title="Telegram" src="logo/tg.png"> Интеграция с Telegram
 После прохождения тестов, в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
-![Telegram Bot](images/screenshots/tg_bot.png)
+<img width="40%" title="Telegram Bot" src="logo/tg_bot.png">
