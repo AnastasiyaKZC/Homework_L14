@@ -52,11 +52,6 @@ pytest tests/ # Запуск всех тестов в проекте
 pytest -v tests/  # Запуск всех тестов с детальным логом
 ```
 
-
-```sh
-pytest -v tests/  # Запуск всех тестов с детальным логом
-```
-
 ```sh
 pytest --alluredir=allure-results  # Запуск с сохранением отчёта Allure
 ```
