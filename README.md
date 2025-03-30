@@ -24,7 +24,7 @@
 
 
 
-## Проект реализован с использованием
+## Проект реализован с использованием 
 <p align="left">
   <img width="5%" title="Pycharm" src="logo/pycharm.png">
   <img width="5%" title="Python" src="logo/python.png">
