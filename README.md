@@ -33,8 +33,8 @@
   <img width="5%" title="GitHub" src="logo/github.png">
   <img width="5%" title="Jenkins" src="logo/jenkins.png">
   <img width="5%" title="Selenoid" src="logo/selenoid.png">
-  <img width="5%" title="Allure Report" src="logo/allure_report.png">
-  <img width="5%" title="Allure Report" src="logo/allure_testops.png">
+  <img width="5%" title="Allure Report" src="logo/icon_allure.png">
+  <img width="5%" title="Allure TestOps" src="logo/allure_testops.png">
   <img width="5%" title="Telegram" src="logo/tg.png">
 </p>
 
@@ -77,7 +77,7 @@ pytest --alluredir=allure-results  # Запуск с сохранением от
 При нажатии на "Build with Parameters", а затем "Build" начнется сборка тестов и их прохождение через виртуальную машину в Selenide.
 ![Jenkins Screenshot](logo/jenkins_screen.png)
 
-## <img width="3%" title="Allure Report" src="logo/allure_report.png"> Allure report
+## <img width="3%" title="Allure Report" src="logo/icon_allure.png"> Allure report
 После прохождения тестов, результаты можно посмотреть в Allure отчете, где также содержится ссылка на Jenkins.
 ![Allure Dashboard](logo/allure_report.png)
 
