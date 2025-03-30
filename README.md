@@ -6,7 +6,6 @@
 - [Ссылка на дженкинс лекции](https://jenkins.autotests.cloud/login?from=%2Fjob%2Fteacher-iTerkin-qa_guru_python_8_full_project%2F0) 
 
 
-# Доделать! - ссылка на аллюр-отчет, телеграмм бот
 
 ## Проект UI автотестов "it.arda.digital"
 > <a target="_blank" href="https://it.arda.digital/">Ссылка на страницу ИТ-кластера</a>
@@ -77,10 +76,10 @@ pytest  # Запуск всех тестов в проекте
 ![Test Video](logo/test.gif)
 
 ## <img width="3%" title="Allure TestOps" src="logo/allure_testops.png"> Интеграция с Allure TestOps
-[Dashboard](https://allure.autotests.cloud/project/1720/dashboards)
+[Dashboard](https://allure.autotests.cloud/launch/45474)
 
 Так же вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики.
-![Allure TestOps Dashboard](images/screenshots/allure_testops_dashboard.png)
+![Allure TestOps Dashboard](logo/testOps.png)
 
 Во вкладке со сьютами, мы можем:
 - Управлять всеми тест-кейсами или с каждым отдельно
@@ -88,7 +87,7 @@ pytest  # Запуск всех тестов в проекте
 - Настроить интеграцию с Jira
 - Добавлять ручные тесты и т.д.
 
-![Allure TestOps Suites](images/screenshots/allure_testops_suites.png)
+![Allure TestOps Suites](logo/testops_suites.png)
 
 ## <img width="3%" title="Telegram" src="logo/tg.png"> Интеграция с Telegram
 После прохождения тестов, в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
