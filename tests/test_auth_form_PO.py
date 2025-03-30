@@ -19,6 +19,38 @@ def test_empty_auth_form(setup_browser):
 
 @allure.epic("Authorization Form Tests")
 @allure.feature("Authorization Form")
+@allure.story("Пользователь вводит неверный логин")
+@allure.title("Проверка ошибки при вводе неверного логина (page_object)")
+def test_invalid_login(setup_browser):
+    auth_page = AuthPage(setup_browser)
+    (
+        auth_page.open()
+        .open_auth_form()
+        .enter_email("wrong@arda.digital")  # ❌ Неверный логин
+        .enter_password("111111")  # ✅ Верный пароль
+        .submit()
+    )
+    # Проверяем, что отображается ошибка авторизации
+    setup_browser.element(".text-red").should(be.visible)
+
+@allure.epic("Authorization Form Tests")
+@allure.feature("Authorization Form")
+@allure.story("Пользователь вводит неверный пароль")
+@allure.title("Проверка ошибки при вводе неверного пароля (page_object)")
+def test_invalid_password(setup_browser):
+    auth_page = AuthPage(setup_browser)
+    (
+        auth_page.open()
+        .open_auth_form()
+        .enter_email("member@arda.digital")  # ✅ Верный логин
+        .enter_password("wrongpassword")  # ❌ Неверный пароль
+        .submit()
+    )
+    # Проверяем, что отображается ошибка авторизации
+    setup_browser.element(".text-red").should(be.visible)
+
+@allure.epic("Authorization Form Tests")
+@allure.feature("Authorization Form")
 @allure.story("Пользователь должен успешно авторизоваться")
 @allure.title("Проверка успешной авторизации (page_object)")
 def test_successful_authorization_2(setup_browser):
@@ -31,5 +63,4 @@ def test_successful_authorization_2(setup_browser):
         .enter_password("111111")
         .submit()
     )
-
     main_page.should_have_user_menu()

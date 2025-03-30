@@ -1,4 +1,6 @@
+import shutil
 import pytest
+import requests
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -23,7 +25,6 @@ def setup_browser():
         command_executor="https://user1:1234@selenoid.autotests.cloud/wd/hub",
         options=options
     )
-
     browser = Browser(Config(driver=driver))
     yield browser
 
@@ -31,7 +32,6 @@ def setup_browser():
     attach.add_html(browser)
     attach.add_logs(browser)
     attach.add_video(browser)
-
     browser.quit()
 
 
@@ -54,4 +54,4 @@ def setup_browser():
 #
 #         # Закрываем браузер после выполнения теста
 #     browser.quit()
-#
+
